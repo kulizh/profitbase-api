@@ -62,11 +62,6 @@ final class Token
 
     private function setCached(string $access_token)
     {
-        if (!is_dir(self::$CACHE_DIR))
-        {
-            mkdir(self::$CACHE_DIR, 0777, true);
-        }
-
         $cache_filename = dirname(__FILE__) . self::$CACHE_DIR . 'token.cache';
         
         file_put_contents($cache_filename, $access_token);
