@@ -1,0 +1,18 @@
+{
+    "name": "kulizh/profitbase-api",
+    "description": "Tool for API Requests to Profitbase service [beta]",
+    "version": "0.1.0",
+    "autoload": {
+      "psr-4": {
+        "Profitbase\\": "src/"
+      }
+    },
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Nikita Kulizhnikov",
+        "email": "mail@kulizh.ru",
+        "role": "Developer"
+      }
+    ]
+  }

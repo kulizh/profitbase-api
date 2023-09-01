@@ -1,0 +1,6 @@
+data/cache
+!data/cache/.gitkeep
+*.cache
+data/*.json
+tmp/
+vendor/
