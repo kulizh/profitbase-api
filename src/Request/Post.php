@@ -14,8 +14,6 @@ class Post implements IRequest
 
     public function make(string $url, array $payload)
     {
-        echo $url;
-
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_HEADER, 0);

@@ -38,7 +38,7 @@ final class Token
                 ]
             ]);
 
-            $this->accessToken = $result['access_token'];
+            $this->accessToken = $result['access_token'] ?? '';
             $this->setCached($this->accessToken);
         }
 
