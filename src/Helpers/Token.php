@@ -5,8 +5,8 @@ use Profitbase\Request\Post;
 
 final class Token
 {
-    private static $CACHE_LIFETIME = 86400; // 24 hours
-    private static $CACHE_DIR = '/../../data/cache/';
+    public static $CACHE_LIFETIME = 86400; // 24 hours
+    public static $CACHE_DIR = '/../../data/cache/';
 
     private string $appKey;
     private string $url;

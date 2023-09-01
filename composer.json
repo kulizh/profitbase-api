@@ -1,7 +1,7 @@
 {
     "name": "kulizh/profitbase-api",
     "description": "Tool for API Requests to Profitbase service [beta]",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "autoload": {
       "psr-4": {
         "Profitbase\\": "src/"
