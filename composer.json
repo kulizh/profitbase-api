@@ -1,7 +1,7 @@
 {
     "name": "kulizh/profitbase-api",
     "description": "PHP wrapper to send request to Profitbase API",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "autoload": {
       "psr-4": {
         "Profitbase\\": "src/"
