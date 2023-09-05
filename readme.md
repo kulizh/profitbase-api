@@ -1,11 +1,15 @@
-# PHP-обёртка над АПИ Profitbase
+# PHP-обёртка для отправки запросов к Profitbase API
+## Установка
+Установите пакет с помощью (Composer)[https://packagist.org/packages/kulizh/profitbase-api]:
+`composer require kulizh/profitbase-api`
+
+
+## Basic usage
 
 ```php
-require_once dirname(__FILE__) . '/../vendor/autoload.php';
+require_once dirname(__FILE__) . '/vendor/autoload.php';
 
+// Initialize object
 $profitbaseApi = new Profitbase\Api('app-64e8axxxcdca3', 'pbxxxx');
 
-$projects = $profitbaseApi->factory('projects')->getList();
-$rooms = $profitbaseApi->factory('properties')->getList();
-$layouts = $profitbaseApi->factory('presets')->getList();
 ```
