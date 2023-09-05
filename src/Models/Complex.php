@@ -1,7 +1,7 @@
 <?php
 namespace Profitbase\Models;
 
-class Projects extends ModelAbstract
+class Complex extends ModelAbstract
 {
     protected string $method = '/projects';
 }

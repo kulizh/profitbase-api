@@ -1,7 +1,7 @@
 <?php
 namespace Profitbase\Models;
 
-class Houses extends ModelAbstract
+class Building extends ModelAbstract
 {
     protected string $method = '/house';
 }

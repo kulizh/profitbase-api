@@ -12,7 +12,7 @@ class Get implements IRequest
         $this->token = $token;
     }
 
-    public function make(string $url, array $payload)
+    public function make(string $url, array $payload): array
     {
         $payload['access_token'] = $this->token->access();
         
@@ -22,7 +22,23 @@ class Get implements IRequest
         }
 
         $result = file_get_contents($url);
+        $result = json_decode($result, true);
+       
+        if (!empty($result['status']) && $result['status'] !== 'success')
+        {
+            return [];
+        }
+        
+        if (!empty($result['data']))
+        {
+            return $result['data'];
+        }
+        
+        if (!empty($result) && !isset($result['data']))
+        {
+            return $result;
+        }
 
-        return json_decode($result, true);
+        return [];
     }
 }

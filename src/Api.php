@@ -19,13 +19,9 @@ class Api
         $this->register();
     }
 
-    public function factory(string $name, string $namespace = ''): ModelAbstract
+    public function model(string $name): ModelAbstract
     {
-        $namespace = (empty($namespace)) 
-            ? __NAMESPACE__ . '\Models\\'
-            : $namespace;
-        
-        $classname = $namespace . ucfirst($name);
+        $classname = __NAMESPACE__ . '\Models\\' . ucfirst($name);
 
         if (class_exists($classname))
         {
